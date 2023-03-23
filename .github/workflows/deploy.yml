@@ -8,7 +8,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: cache and dependencies
-        uses: ./.github/Actions
+        uses: ./.github/Actions/Cache
       - name: Test code
         id: run-tests
         run: npm run test

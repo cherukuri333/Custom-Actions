@@ -8,7 +8,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: download Dependencies
-        uses: Custom-Actions/.github/customactions/dependencies/action.yml
+        uses: ./.github/customactions/dependencies/action.yml
       - name: Test code
         id: run-tests
         run: npm run test
